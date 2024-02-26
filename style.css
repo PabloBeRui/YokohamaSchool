@@ -1,0 +1,135 @@
+@font-face {
+  font-family: anta;
+  src: url(./resources/fonts/Anta-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 5vw 0.5vh 5vw;
+
+  padding: 0 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-family: "anta", Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #d60201;
+}
+
+strong {
+  color: green;
+  font-weight: bold;
+}
+
+h2 {
+  color: #d60201;
+}
+/*! div h1 y logo */
+#divNameAndLogo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #d60201;
+  background-color: white;
+}
+
+#divNameAndLogo img {
+  width: 6rem;
+}
+
+/*! div imagenes section */
+/* He investigado una forma de hacer efecto carrusel en css, con scroll-snap-type */
+
+#imgSection {
+  display: flex;
+  width: 90vw;
+
+  /*TODO el x mandatory fuerza a que se vea una de las 2 imagenes y no se quede en medio, acuérdate!!!!! */
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+}
+
+#imgSection img {
+  scroll-snap-align: start;
+  width: 87vw;
+  flex: 0 0 auto;
+  border-radius: 0.1rem;
+}
+
+/*! logo */
+
+#logoImg {
+  width: 10vw;
+}
+
+/*! SECTION con texto y fotos */
+#descriptionAndImgSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#description2 li {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+#description2 p a {
+  text-decoration: none;
+  color: #d60201;
+}
+
+/*! ASIDE */
+
+aside#asideId img {
+  width: 80vw;
+  border-radius: 1rem;
+  /* para no solapar ocn footer */
+  margin-bottom: 5rem;
+}
+
+/*! FOOTER  */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid grey;
+
+  background-color: rgb(255, 255, 255, 0.9);
+}
+
+div.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+footer img {
+  width: 50px;
+}
+
+
+@media (min-width:768px){
+
+
+
+
+    
+}
