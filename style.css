@@ -98,6 +98,7 @@ aside#asideId img {
   border-radius: 1rem;
   /* para no solapar ocn footer */
   margin-bottom: 5rem;
+  margin-top: 1rem;
 }
 
 /*! FOOTER  */
@@ -124,12 +125,87 @@ div.socialLinks {
 footer img {
   width: 50px;
 }
+/* ? MEDIA */
 
+@media (min-width: 768px) {
+  p,
+  li {
+    font-size: xx-large;
+    text-align: justify;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+  body {
+    /* para que el footer no oculte el texto */
+    margin-bottom: 5rem;
+  }
+  /*! div h1 y logo */
+  #divNameAndLogo {
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+  /*! div imagenes section */
 
-@media (min-width:768px){
+  #imgSection {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    gap: 4rem;
+  }
 
+  #imgSection img {
+    width: 25vw;
+    flex: 0 0 auto;
+    border-radius: 2rem;
+    border: 1px solid #d60201;
+  }
 
+  #imgSection img:hover {
+    border: 3px solid #d60201;
+  }
+  /*! Contenedor del section y el aside */
 
+  #asideSectionContainer {
+    display: flex;
+  }
+  /*! ASIDE */
 
-    
+  aside#asideId img {
+    width: 20vw;
+    border-radius: 1rem;
+    border: 1px solid #d60201;
+    margin-left: 2rem;
+    margin-top: 50rem;
+  }
+
+  aside#asideId img:hover {
+    border: 3px solid #d60201;
+  }
+  /*! SECTION con texto y fotos */
+
+  section {
+    width: 75vw;
+  }
+
+  /* !footer */
+  footer {
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255, 0.95);
+  }
+  footer img:hover {
+    width: 3rem;
+    filter: drop-shadow(2px 2px 2px #d60201);
+  }
+
+  /* cambio margin de p para que no aparezca arriba en footer */
+  footer p {
+    margin: 1rem;
+  }
 }
